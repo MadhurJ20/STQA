@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Task</h1>
+    </header>
+    <main>
+        <form id="task-form">
+            <input type="text" id="title" placeholder="Task Title" required>
+            <input type="datetime-local" id="dueDate" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </main>
+    <script>
+        document.getElementById('task-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('title').value;
+            const dueDate = document.getElementById('dueDate').value;
+            addTask({ title, dueDate, completed: false });
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
