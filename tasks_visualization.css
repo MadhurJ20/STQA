@@ -1,0 +1,48 @@
+body {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.day {
+    background-color: hsl(0, 0%, 20%);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    min-height: 100px;
+}
+.day h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.task {
+    background-color: hsl(125, 47%, 54%);
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    text-align: left;
+}
+.empty {
+    background-color: hsl(0, 0%, 15%);
+}
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: hsl(40, 90%, 50%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}

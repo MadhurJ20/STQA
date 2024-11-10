@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+}
+.to-do-list {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-left: 5px;
+}
+.add-button {
+    background-color: hsl(125, 47%, 54%);
+}
+.add-button:hover {
+    background-color: hsl(125, 47%, 44%);
+}
+.delete-button {
+    background-color: hsl(10, 90%, 50%);
+}
+.delete-button:hover {
+    background-color: hsl(10, 90%, 40%);
+}
+.complete-button {
+    background-color: hsl(40, 90%, 50%);
+}
+.complete-button:hover {
+    background-color: hsl(40, 90%, 40%);
+}
+.edit-button {
+    background-color: hsl(207, 90%, 64%);
+}
+.edit-button:hover {
+    background-color: hsl(207, 90%, 54%);
+}
+.clear-button {
+    background-color: hsl(0, 90%, 50%);
+}
+.clear-button:hover {
+    background-color: hsl(0, 90%, 40%);
+}
+.completed {
+    text-decoration: line-through;
+    color: hsl(0, 0%, 70%);
+}
+input[type="text"], input[type="time"], input[type="date"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 1);
+    margin-right: 5px;
+}
+ol {
+    padding: 0;
+}
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text {
+    flex: 1;
+    color: hsl(0, 0%, 10%);
+}
+.move-button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+}
+.button-container {
+    margin-top: 20px;
+}
+.manage-notifications-button {
+    background-color: hsl(200, 80%, 60%);
+}
+.manage-notifications-button:hover {
+    background-color: hsl(200, 80%, 50%);
+}
+.view-tasks-button {
+    background-color: hsl(300, 80%, 60%);
+}
+.view-tasks-button:hover {
+    background-color: hsl(300, 80%, 50%);
+}

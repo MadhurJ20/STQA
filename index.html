@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-    <div class="container">
+    <div class="to-do-list">
         <h1>To-Do List</h1>
-        <div class="input-container">
-            <input type="text" id="task-input" placeholder="Add a new task" required>
-            <button id="add-task">Add Task</button>
+        <div>
+            <input type="text" id="taskInput" placeholder="Enter a task..." />
+            <input type="date" id="taskDateInput" />
+            <input type="time" id="taskTimeInput" />
+            <button class="add-button" id="addButton">Add</button>
+            <button class="clear-button" id="clearCompletedButton">Clear Completed</button>
         </div>
-        <ul id="task-list"></ul>
+        <ol id="taskList"></ol>
+        <div class="button-container">
+            <button class="manage-notifications-button" onclick="location.href='manage_notifications.html'">Manage Notifications</button>
+            <button class="view-tasks-button" onclick="location.href='tasks-visualization.html'">View Tasks Visualization</button>
+        </div>
     </div>
+    <script src="homepage.js"></script>
 </body>
 </html>
