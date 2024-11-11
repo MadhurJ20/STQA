@@ -25,9 +25,9 @@ def test_todo_list():
     passed_steps = 0
 
     # Navigate to the local server where your app is running
-    driver.get("http://127.0.0.1:3000/integration-test/index.html")  # Update the URL to your app
+    driver.get("http://localhost:5500/integration-test/index.html")  # Update the URL to your app
     print("Step 1: Navigated to the app URL.")
-
+    time.sleep(5)  # Adjust as necessary
     # Wait until the input field is present
     try:
         input_field = WebDriverWait(driver, 20).until(
@@ -50,7 +50,7 @@ def test_todo_list():
     passed_steps += 1
 
     # Wait for the task to be added to the DOM
-    time.sleep(1)  # Adjust as necessary
+    time.sleep(5)  # Adjust as necessary
 
     # Verify the task is added to the list
     try:
@@ -79,7 +79,7 @@ def test_todo_list():
         passed_steps += 1
 
         # Wait for the task to be removed
-        time.sleep(1)  # Adjust as necessary
+        time.sleep(5)  # Adjust as necessary
 
         # Verify the task is removed
         current_tasks = task_list.text
