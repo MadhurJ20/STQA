@@ -1,0 +1,123 @@
+{
+  "id": "f2e15d93-ba84-45d9-84d6-9d8af5efaa64",
+  "version": "2.0",
+  "name": "gk-test-zebra",
+  "url": "http://localhost:5500",
+  "tests": [{
+    "id": "0677dfd4-61ca-4fa3-bf28-5a8b561484fa",
+    "name": "addTask",
+    "commands": [{
+      "id": "015fbf03-2fda-4864-b266-a4803e2969de",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5e059de-84e9-4971-88e4-4997330851fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=taskInput",
+      "targets": [
+        ["id=taskInput", "id"],
+        ["css=#taskInput", "css:finder"],
+        ["xpath=//input[@id='taskInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf3600fe-128c-4b8e-b6e9-aa69cda6455f",
+      "comment": "",
+      "command": "type",
+      "target": "id=taskInput",
+      "targets": [
+        ["id=taskInput", "id"],
+        ["css=#taskInput", "css:finder"],
+        ["xpath=//input[@id='taskInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "this is a test"
+    }, {
+      "id": "587c0693-52dc-4009-8df9-60db1ea3ecc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=addButton",
+      "targets": [
+        ["id=addButton", "id"],
+        ["css=#addButton", "css:finder"],
+        ["xpath=//button[@id='addButton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89ce756-a142-4846-b6fc-d28887a5b77e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.complete-button",
+      "targets": [
+        ["css=.complete-button", "css:finder"],
+        ["xpath=//button[@onclick='toggleComplete(0)']", "xpath:attributes"],
+        ["xpath=//ol[@id='taskList']/li/div/button", "xpath:idRelative"],
+        ["xpath=//li/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0bc64e5-cd6a-434d-b01f-0f70033aaa1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.complete-button",
+      "targets": [
+        ["css=.complete-button", "css:finder"],
+        ["xpath=//button[@onclick='toggleComplete(0)']", "xpath:attributes"],
+        ["xpath=//ol[@id='taskList']/li/div/button", "xpath:idRelative"],
+        ["xpath=//li/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Undo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19285406-8869-4047-bf2d-c8c172535ccf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.manage-notifications-button",
+      "targets": [
+        ["css=.manage-notifications-button", "css:finder"],
+        ["xpath=//button[@onclick=\"location.href='manage_notifications.html'\"]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage Notifications')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e214249a-ebfa-4d77-9701-18d63a0087de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.notification",
+      "targets": [
+        ["css=.notification", "css:finder"],
+        ["xpath=//div[@id='notificationList']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b3de87e-aec0-477c-901b-8f13f607782f",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3bf60793-7238-4b6c-98b8-90c50ca31ead",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0677dfd4-61ca-4fa3-bf28-5a8b561484fa"]
+  }],
+  "urls": ["http://localhost:5500/"],
+  "plugins": []
+}
